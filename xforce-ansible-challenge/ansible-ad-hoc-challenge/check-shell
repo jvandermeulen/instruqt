@@ -10,7 +10,3 @@
 #   echo "DIAG: ${USERFILE} not found. Please read instructions."
 #	exit 1
 #fi
-
-grep ^devops /etc/group -q
-RETVAL=$?
-[ $RETVAL -ne 0 ]  && { echo "DIAG: group does not exist on ${HOSTNAME}"; exit 1; }
