@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 #echo "Checking the solution of the inventory challenge."
-# For some reason oneliner below does not work.
-#diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null || { echo "DIAG: De inventory is niet juist gevuld"; exit 1; }
+# For some reason below mentioned oneliner does NOT work.
+#diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null || { echo "DIAG: Ansible inventory incorrect"; exit 1; }
 
 USERFILE="/tmp/all-hosts.lst"
 if [ -f "${USERFILE}" ]

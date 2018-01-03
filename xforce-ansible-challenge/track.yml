@@ -21,7 +21,7 @@ challenges:
   difficulty: basic
   timelimit: 900
   points: 50
-  unlocks: []
+  unlocks: [ansible-ad-hoc-challenge]
   tabs:
     internal:
     - type: terminal
@@ -35,13 +35,12 @@ challenges:
   teaser: Issue an ad-hoc command on the remote host
   notes:
   - type: text
-    title: This is a note
+    title: Ad-hoc commands
     contents: |-
-      The contents of the note. You can use any GitHub flavoured markdown.
+      Ansible allows you to run playbooks or ad-hoc commands
   assignment: |-
     In order to complete this challenge you have to issue an ad-hoc command:
-    groupadd devops
-    You can use any GitHub flavoured markdown.
+    `groupadd devops` using the command or shell module. Target host is "remote"
   difficulty: basic
   timelimit: 900
   points: 50
