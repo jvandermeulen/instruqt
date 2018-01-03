@@ -63,7 +63,12 @@ challenges:
   credits: 10
   title: Ansible Fact Challenge
   teaser: Create a custom fact on a remote machine
-  notes: []
+  notes:
+  - type: text
+    title: Factw
+    contents: |-
+      #facts#
+      During this challenge you'll have to make sure your remote machine contains certain variables (facts).
   assignment: |-
     In order to complete this challenge you have to create a custom fact on the remote machine that will be used later on
     
