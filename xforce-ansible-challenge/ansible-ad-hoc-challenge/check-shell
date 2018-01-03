@@ -1,2 +1,4 @@
 #!/bin/bash
 echo "Checking the solution of the challenge"
+echo "DIAG: instruqt challenge not ready, please check later"
+exit 1
