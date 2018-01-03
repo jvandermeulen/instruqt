@@ -18,7 +18,7 @@ if [ $RETVAL -ne 0 ]; then
   exit 1
 fi
 
-if [ ! -d ~root/.ansible/.tmp ]; then
+if [ ! -d ~root/.ansible/tmp ]; then
   echo "DIAG: group exists but have you been using Ansible to achieve this?"
   exit 1
 fi
