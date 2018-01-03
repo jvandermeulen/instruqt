@@ -17,4 +17,4 @@ configuration:
       Port: 22
     Privileged: false
     Resources:
-Memory: 128
+    Memory: 128
