@@ -17,7 +17,7 @@ challenges:
       Your default Ansible inventory (file or directory) can be configured using ansible.cfg. During this challenge you 'll have to edit this file.
   assignment: |-
     In order to complete this challenge please create a group "centos-servers" with a single item of server "remote" in the default inventory file.
-    .
+    
     Save the output of command "ansible centos-servers --list-hosts" to /tmp/all-hosts.lst
   difficulty: basic
   timelimit: 900
@@ -66,6 +66,8 @@ challenges:
   notes: []
   assignment: |-
     In order to complete this challenge you have to create a custom fact on the remote machine that will be used later on
+    
+    See: http://docs.ansible.com/ansible/latest/playbooks_variables.html#local-facts-facts-d
   difficulty: intermediate
   timelimit: 900
   points: 100
