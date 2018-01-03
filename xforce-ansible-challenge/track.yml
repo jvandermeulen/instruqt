@@ -14,10 +14,10 @@ challenges:
   - type: text
     title: Inventory
     contents: |-
-      Your default Ansible inventory file or directory can be configured using ansible.cfg. During this challenge you 'll have to edit this file.
+      Your default Ansible inventory (file or directory) can be configured using ansible.cfg. During this challenge you 'll have to edit this file.
   assignment: |-
-    In order to complete this challenge please create a group "centos-servers" with a single item: server "remote" in the default inventroy file.
-    Save the output of command "ansible all --list-hosts" to /tmp/all-hosts.lst
+    In order to complete this challenge please create a group "centos-servers" with a single item: server "remote" in the default inventory file.
+    Save the output of command "ansible centos-servers --list-hosts" to /tmp/all-hosts.lst
   difficulty: basic
   timelimit: 900
   points: 50

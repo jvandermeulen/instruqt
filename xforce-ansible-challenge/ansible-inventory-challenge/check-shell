@@ -1,9 +1,22 @@
 #!/bin/bash
+#
 #echo "Checking the solution of the inventory challenge."
-diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null
+# For some reason oneliner below does not work.
+#diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null || { echo "DIAG: De inventory is niet juist gevuld"; exit 1; }
+
+USERFILE="/tmp/all-hosts.lst"
+if [ -f "${USERFILE}" ]
+then
+	echo "${USERFILE} found."
+else
+	echo "DIAG: ${USERFILE} not found. Please read instructions."
+	exit 1
+fi
+
+diff ${USERFILE} ~/chal-01-output-wanted.txt 1>/dev/null 2>&1
 RETCODE=$?
-if [ $RETCODE -neq 0 ]; then
-  echo "DIAG: De inventory is niet juist gevuld"
+if [ $RETCODE -gt 0 ]; then
+  echo "DIAG: Ansible inventory is incorrect"
   exit 1
 fi
 

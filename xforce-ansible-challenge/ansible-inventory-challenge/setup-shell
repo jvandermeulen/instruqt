@@ -39,10 +39,10 @@ EOF!
 
 chmod -R 600 $HOME/.ssh/id_rsa*
 
-
+date > timestamp.txt
 
 echo "Setting up the challenge on Ansible host"
 cat <<EOF! > ~/chal-01-output-wanted.txt
-  hosts (1):                                                                                                                  
-    remote
+  hosts (1):                                                                                                                
+    remote    
 EOF!
