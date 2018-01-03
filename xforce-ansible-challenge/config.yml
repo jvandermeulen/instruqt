@@ -6,6 +6,7 @@ configuration:
     Ports:
     - Name: shell
       Port: 8080
+      Exposed: true
     Privileged: false
     Resources:
       Memory: 256
