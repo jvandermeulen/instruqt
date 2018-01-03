@@ -14,9 +14,8 @@ challenges:
   - type: text
     title: Inventory
     contents: | -
-      Your default Ansible inventory file or directory is configured ansible.cfg 
-      During this challenge you 'll have to edit this file.
-  assignment: |-
+      Your default Ansible inventory file or directory can be figured using ansible.cfg. During this challenge you 'll have to edit this file.
+  assignment: | -
     In order to complete this challenge please create a group "centos-servers" with a single item: server "remote" in the default inventroy file.
     Save the output of command "ansible all --list-hosts" to /tmp/all-hosts.lst
   difficulty: basic
@@ -38,12 +37,10 @@ challenges:
   - type: text
     title: This is a note
     contents: |
-      The contents of the note.
-      You can use any GitHub flavoured markdown.
-  assignment: |-
+      The contents of the note.  You can use any GitHub flavoured markdown.
+  assignment: | -
     In order to complete this challenge you have to issue an ad-hoc command:
-    `groupadd devops`
-
+    groupadd devops
     You can use any GitHub flavoured markdown.
   difficulty: basic
   timelimit: 900
@@ -61,9 +58,8 @@ challenges:
   title: Ansible Fact Challenge
   teaser: Create a custom fact on a remote machine
   notes: []
-  assignment: |-
+  assignment: | -
     In order to complete this challenge you have to create a custom fact on the remote machine that will be used later on
-
   difficulty: intermediate
   timelimit: 900
   points: 100
