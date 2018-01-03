@@ -1,3 +1,10 @@
 #!/bin/bash
-echo "Checking the solution of the inventory challenge."
-diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null  || echo "DEBUG: De inventory is niet juist gevuld"
+#echo "Checking the solution of the inventory challenge."
+diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null
+RETCODE=$?
+if [ $RETCODE -neq 0 ]; then
+  echo "DIAG: De inventory is niet juist gevuld"
+  exit 1
+fi
+
+exit 0
