@@ -45,6 +45,26 @@ challenges:
       name: shell
       port: 8080
     external: []
+- slug: ansible-fact-challenge
+  credits: 10
+  title: Ansible Fact Challenge
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
 developers:
 - jorgenvandermeulen@gmail.com
 status: preview
