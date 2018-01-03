@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "Setting up the challenge on Ansible host"
+cat <<EOF! >> ~/chal-01-output-wanted.txt
+  hosts (1):                                                                                                                  
+    remote
+EOF! 

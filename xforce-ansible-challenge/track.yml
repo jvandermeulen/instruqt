@@ -1,0 +1,50 @@
+slug: xforce-ansible-challenge
+icon: http://community.redhat.com/images/software/ansible.svg?1478100396
+title: Xforce Ansible Track
+teaser: Show your Ansible Core skills
+description: Show your Ansible Core skills using CLI on a remote machine
+tags:
+- ansible
+challenges:
+- slug: ansible-inventory-challenge
+  credits: 10
+  title: Ansible Inventory Challenge
+  teaser: Group servers together in your Ansible inventory
+  notes: []
+  assignment: |-
+    Please make a group "centos-servers" with a single item: server "remote"
+    Save the output van "ansible all --list-hosts" in /tmp/all-hosts.lst
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
+- slug: ansible-ad-hoc-challenge
+  credits: 10
+  title: Ansible Ad-hoc Challenge
+  teaser: A short description of the challenge.
+  notes: []
+  assignment: |-
+    The assignment the participant needs to complete in order to proceed.
+
+    You can use any GitHub flavoured markdown.
+  difficulty: basic
+  timelimit: 900
+  points: 50
+  unlocks: []
+  tabs:
+    internal:
+    - type: terminal
+      title: Shell
+      name: shell
+      port: 8080
+    external: []
+developers:
+- jorgenvandermeulen@gmail.com
+status: preview

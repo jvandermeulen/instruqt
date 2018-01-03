@@ -1,0 +1,20 @@
+template: containers
+configuration:
+  Containers:
+  - Image: gcr.io/instruqt/shell-ansible:centos7
+    Name: shell
+    Ports:
+    - Name: shell
+      Port: 8080
+    Privileged: false
+    Resources:
+      Memory: 256
+  - Image: gcr.io/instruqt/shell-ansible:centos7
+    Name: remote
+    Ports:
+    - Exposed: false
+      Name: ssh
+      Port: 22
+    Privileged: false
+    Resources:
+Memory: 128
