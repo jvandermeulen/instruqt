@@ -16,7 +16,8 @@ challenges:
     contents: |-
       Your default Ansible inventory (file or directory) can be configured using ansible.cfg. During this challenge you 'll have to edit this file.
   assignment: |-
-    In order to complete this challenge please create a group "centos-servers" with a single item: server "remote" in the default inventory file.
+    In order to complete this challenge please create a group "centos-servers" with a single item of server "remote" in the default inventory file.
+    .
     Save the output of command "ansible centos-servers --list-hosts" to /tmp/all-hosts.lst
   difficulty: basic
   timelimit: 900
@@ -40,11 +41,17 @@ challenges:
       Ansible allows you to run playbooks or ad-hoc commands
   assignment: |-
     In order to complete this challenge you have to issue an ad-hoc command:
-    `groupadd devops` using the command or shell module. Target host is "remote"
+    
+    `name=devops` 
+     
+     using the `group` module.
+     
+     
+     Target host is "remote"
   difficulty: basic
   timelimit: 900
   points: 50
-  unlocks: []
+  unlocks: [ansible-fact-challenge]
   tabs:
     internal:
     - type: terminal

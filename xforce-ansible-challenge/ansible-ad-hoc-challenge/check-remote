@@ -1,0 +1,26 @@
+#!/bin/bash
+#echo "Checking the solution of the challenge"
+#echo "DIAG: instruqt challenge not ready, please check later"
+#exit 1
+
+#if [ -f "${USERFILE}" ]
+#then
+# 	echo "${USERFILE} found."
+#else
+#   echo "DIAG: ${USERFILE} not found. Please read instructions."
+#	exit 1
+#fi
+
+grep ^devops /etc/group -q
+RETVAL=$?
+if [ $RETVAL -ne 0 ]; then
+  echo "DIAG: group does not exist on ${HOSTNAME}"
+  exit 1
+fi
+
+if [ -d ~root/.ansible/.tmp ]; then
+  echo "DIAG: group exists but have you been using Ansible to achieve this?"
+  exit 1
+fi
+
+exit 0
