@@ -12,8 +12,8 @@ challenges:
   teaser: Group servers together in your Ansible inventory
   notes: []
   assignment: |-
-    Please make a group "centos-servers" with a single item: server "remote"
-    Save the output van "ansible all --list-hosts" in /tmp/all-hosts.lst
+    In order to complete this challenge please create a group "centos-servers" with a single item: server "remote" in the default inventroy file.
+    Save the output of command "ansible all --list-hosts" to /tmp/all-hosts.lst
   difficulty: basic
   timelimit: 900
   points: 50
@@ -28,10 +28,11 @@ challenges:
 - slug: ansible-ad-hoc-challenge
   credits: 10
   title: Ansible Ad-hoc Challenge
-  teaser: A short description of the challenge.
+  teaser: Issue an ad-hoc command on the remote host
   notes: []
   assignment: |-
-    The assignment the participant needs to complete in order to proceed.
+    In order to complete this challenge you have to issue an ad-hoc command:
+    `groupadd devops`
 
     You can use any GitHub flavoured markdown.
   difficulty: basic
@@ -48,15 +49,14 @@ challenges:
 - slug: ansible-fact-challenge
   credits: 10
   title: Ansible Fact Challenge
-  teaser: A short description of the challenge.
+  teaser: Create a custom fact on a remote machine
   notes: []
   assignment: |-
-    The assignment the participant needs to complete in order to proceed.
+    In order to complete this challenge you have to create a custom fact on the remote machine that will be used later on
 
-    You can use any GitHub flavoured markdown.
-  difficulty: basic
+  difficulty: intermediate
   timelimit: 900
-  points: 50
+  points: 100
   unlocks: []
   tabs:
     internal:
