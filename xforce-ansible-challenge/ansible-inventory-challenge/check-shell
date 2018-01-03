@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "Checking the solution of the inventory challenge."
-diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null  || ( echo "DEBUG: De inventory is niet juist gevuld" ; exit 1)  && echo "DEBUG: de inventory ziet er goed uit"
+diff /tmp/all-hosts.lst ~/chal-01-output-wanted.txt 1>/dev/null  || echo "DEBUG: De inventory is niet juist gevuld"
