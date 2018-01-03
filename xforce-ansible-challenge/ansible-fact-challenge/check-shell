@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "DIAG: instruqt challenge not ready, please check later"
+exit 1
