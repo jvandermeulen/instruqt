@@ -13,7 +13,7 @@ else
 	exit 1
 fi
 
-diff ${USERFILE} ~/chal-01-output-wanted.txt 1>/dev/null 2>&1
+diff --ignore-all-space ${USERFILE} ~/chal-01-output-wanted.txt 1>/dev/null 2>&1
 RETCODE=$?
 if [ $RETCODE -gt 0 ]; then
   echo "DIAG: Ansible inventory is incorrect"
