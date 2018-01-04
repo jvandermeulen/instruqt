@@ -67,7 +67,7 @@ challenges:
   - type: text
     title: Factw
     contents: |-
-      #facts#
+      Facts
       
       During this challenge you'll have to make sure your remote machine contains certain variables (facts).
   assignment: |-
